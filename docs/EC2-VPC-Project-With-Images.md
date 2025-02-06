@@ -42,12 +42,12 @@ The architecture above follows a multi-tier AWS networking model with:
     - Public ASG instances connected to the Application Load Balancer for traffic distribution
 - Userdata script for the Auto Scaling Group launch Template
     - #!/bin/bash
-    - # to update, download http, start and enable httpd, and to add a text file in /var/www/html/index.html
+    - #to update, download http, start and enable httpd, and to add a text file in /var/www/html/index.html
     - dnf update -y
     - dnf install httpd -y
     - systemctl start httpd
     - systemctl enable httpd
-    - echo “<h1>Hello world from $(hostname -f)</h1>” > /var/www/html/index.html
+    - echo “Hello world from $(hostname -f)” > /var/www/html/index.html
 - Elastic Load Balancer:
     - Application load balancer to distribute HTTP/HTTPS traffic
 - IAM Role:
@@ -146,7 +146,7 @@ The architecture above follows a multi-tier AWS networking model with:
             - Used the same keypair1 and attached the AutoScalingGroup-SG
             - On the launch template user data I plugged in this script:
             - #!/bin/bash
-            - # to update, download http, start and enable httpd, and to add a text file in /var/www/html/index.html
+            - #to update, download http, start and enable httpd, and to add a text file in /var/www/html/index.html
             - dnf update -y
             - dnf install httpd -y
             - systemctl start httpd
