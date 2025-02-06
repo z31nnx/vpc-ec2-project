@@ -1,4 +1,4 @@
-# VPC/EC2 Project COMPLETE (1)
+# VPC/EC2 Project COMPLETE
 
 # Project Overview
 
