@@ -7,7 +7,7 @@
 
 # Architecture Design
 
-![VPC_EC2-Complete.jpeg](screenshots/VPC_EC2-Complete.jpeg)
+![VPC_EC2-Complete.jpeg]([screenshots/VPC_EC2-Complete.jpeg](https://github.com/z31nnx/vpc-ec2-project/blob/ed04edf758707fc4472ef858ad7f1ec15a7b3771/screenshots/VPC_EC2-Complete.jpeg))
 
 The architecture above follows a multi-tier AWS networking model with:
 
