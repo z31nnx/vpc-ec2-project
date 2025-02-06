@@ -42,7 +42,7 @@ The architecture above follows a multi-tier AWS networking model with:
     - Public ASG instances connected to the Application Load Balancer for traffic distribution
 - Userdata script for the Auto Scaling Group launch Template
     - #!/bin/bash
-    # to update, download http, start and enable httpd, and to add a text file in /var/www/html/index.html 
+    '''# to update, download http, start and enable httpd, and to add a text file in /var/www/html/index.html 
     dnf update -y
     dnf install httpd -y
     systemctl start httpd
@@ -95,8 +95,8 @@ The architecture above follows a multi-tier AWS networking model with:
             - Created the launch template (Project-Launch-Template), it was unable to select the Project-VPC and multiple subnets so I left it blank. The security group is tied with the VPC so it should fix this nonetheless.
             - Used the same keypair1 and attached the AutoScalingGroup-SG
             - On the launch template user data I plugged in this script:
-            #!/bin/bash
-            # to update, download http, start and enable httpd, and to add a text file in /var/www/html/index.html
+            '''#!/bin/bash
+            '''# to update, download http, start and enable httpd, and to add a text file in /var/www/html/index.html
             dnf update -y
             dnf install httpd -y
             systemctl start httpd
