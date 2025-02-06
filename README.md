@@ -16,3 +16,7 @@ The infrastructure uses AWS security best practices, scalability, and cost effic
 
 # Tools
 - This project was used using A Cloud Guru AWS (Playground) for a cost-effective environment. 
+
+# Future Improvements
+- Convert this whole setup using Terraform or Cloudformation for Infrastructure as Code (IaC)
+- Add CloudWatch monitoring and alarms for real-time metrics and logging. 
